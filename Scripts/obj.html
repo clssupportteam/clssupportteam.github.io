@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Consent - Objections</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+  <main>
+    <div class="navbar">
+      <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'notExec')">Client Not Exec</button>
+        <button class="tablinks" onclick="openTab(event, 'DIY')">DIY</button>
+        <button class="tablinks" onclick="openTab(event, 'solHoldsWill')">Solicitor Holds Will</button>
+        <button class="tablinks" onclick="openTab(event, 'ownSol')">Own Solicitor</button>
+        <button class="tablinks" onclick="openTab(event, 'simpleEst')">Simple Estate</button>
+        <button class="tablinks" onclick="openTab(event, 'notReady')">I'm Not Ready</button>
+      </div>
+    </div>
+
+    <div class="main">
+
+      <h2>Handling Objections</h2>
+      <p>Here are some common client objections and a few suggestions on how to handle them.</p>
+
+
+      <div id="notExec" class="tabcontent">
+        <div class="card">
+          <h3>
+            If the Client advises they are not the Exec
+          </h3>
+          <hr>
+          <p id="pItal">"Ok what I will do is send the hub link to you, for you to share with the the decision maker.
+            However the Executor will need to call back (please leave full booking notes with estate information if
+            this
+            meeting is owned). Information needs to be reiterated on 2nd call with the decision maker."
+          </p>
+        </div>
+      </div>
+      <div id="DIY" class="tabcontent">
+        <div class="card">
+          <h3>
+            Client plans to DIY
+          </h3>
+          <hr>
+          <p id="pItal">"That’s great, are you fully aware of what your responsibilities are as the Exec or
+            Administrator,
+            I can arrange for someone to call you to help you understand what is involved and the cost of Probate so
+            that
+            you understand your options."</p>
+        </div>
+      </div>
+      <div id="solHoldsWill" class="tabcontent">
+        <div class="card">
+          <h3>
+            The Solicitors hold the Will, so I thought I needed to use them
+          </h3>
+          <hr>
+          <p id="pItal">"Not in all circumstances, if they are not named as the Exec and are only holding the Will,
+            ultimately its up to the Exec how they administer the estate, what I can do is arrange a call with one of
+            the
+            specialists who can talk you through your options, so you know what to expect and provide you with a fixed
+            fee
+            quote."</p>
+        </div>
+      </div>
+      <div id="ownSol" class="tabcontent">
+        <div class="card">
+          <h3>
+            Own Solicitor
+          </h3>
+          <hr>
+          <p id="pItal">"Is the Solicitor named as the exec or co exec?. The reason I ask is if you have not yet
+            instructed
+            them we can arrange a meeting with one of our consultants so that you can do a comparison with service and
+            fee
+            structure, however the Solicitor would have to agree to stepping down if they are the named exec."</p>
+        </div>
+      </div>
+      <div id="simpleEst" class="tabcontent">
+        <div class="card">
+          <h3>
+            It’s a Simple Estate
+          </h3>
+          <hr>
+          <p id="pItal">"Good! That’s going to help you a lot, however sometimes complexities may arise. You may benefit
+            from having a meeting with our consultant who can provide you with relevant information and leave you with a
+            guaranteed fixed fee quote."</p>
+        </div>
+      </div>
+      <div id="notReady" class="tabcontent">
+
+        <div class="card">
+          <h3>
+            I'm not Ready
+          </h3>
+          <hr>
+          <p>Send hub link and pipeline where possible. So that there is continuity for the client. </p>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
+</body>
+
+
+
+</html>
