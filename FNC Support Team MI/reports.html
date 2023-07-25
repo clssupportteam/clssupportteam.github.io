@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productivity Report</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+
+  <div class="main">
+    <img id="banner" src="img/coop.gif" alt="Funeralcare Logo" onload="openTab(event, 'Productivity')">
+    <h1>FNC&nbsp;Support&nbsp;Team -&nbsp;Productivity&nbsp;Metrics</h1>
+
+    <h2>Daily Performance</h2>
+
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'Productivity')">Productivity</button>
+      <button class="tablinks" onclick="openTab(event, 'Status')">Status</button>
+      <button class="tablinks" onclick="openTab(event, 'Help')">Help</button>
+    </div>
+
+    <div id="Productivity" class="tabcontent">
+      <h2>Daily Productivity Performance</h2>
+
+<div class="dropdown">
+  <button class="dropbtn">Select Agent</button>
+  <div class="dropdown-content">
+    <a href="dailyProd.html" target="iframeProd">Team Total</a>
+    <a href="Aneeq Ajmal/dailyProd.html" target="iframeProd" >Aneeq Ajmal</a>
+    <a href="Anna Szuster/dailyProd.html" target="iframeProd" >Anna Szuster</a>
+    <a href="Beverley Parker/dailyProd.html" target="iframeProd">Beverley Parker</a>
+    <a href="Jenny Sanchez/dailyProd.html" target="iframeProd">Jenny Sanchez</a>
+    <a href="Jorna Begum/dailyProd.html" target="iframeProd">Jorna Begum</a>
+    <a href="Julie McGuiness/dailyProd.html" target="iframeProd">Julie McGuiness</a>
+    <a href="Laura Hewitt/dailyProd.html" target="iframeProd">Laura Hewitt</a>
+    <a href="Nikolas Galic/dailyProd.html" target="iframeProd">Nikolas Galic</a>
+    <a href="Paul Cook/dailyProd.html" target="iframeProd">Paul Cook</a>
+    <a href="Priyanka Kukkala/dailyProd.html" target="iframeProd">Priyanka Kukkala</a>
+    <a href="Rebecca Fisher/dailyProd.html" target="iframeProd">Rebecca Fisher</a>
+    <a href="Sahara Dennis/dailyProd.html" target="iframeProd">Sahara Dennis</a>
+    <a href="Sean Wider/dailyProd.html" target="iframeProd">Sean Wider</a>
+    <a href="Suna Hilal/dailyProd.html" target="iframeProd">Suna Hilal</a>
+  </div>
+</div>
+
+      <!-- IFRAME - PRODUCTIVITY METRICS -->
+      <div class="resp-container">
+        <div class="statsTable">
+          <iframe src="dailyProd.html" name="iframeProd" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen
+            onload="this.height=window.innerHeight+1500;this.width=window.innerWidth-200;"
+            title="IframeProd">></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div id="Status" class="tabcontent">
+      <h2>Daily Status Metrics</h2>
+<div class="dropdown">
+  <button class="dropbtn">Select Agent</button>
+  <div class="dropdown-content">
+    <a href="dailyStatus.html" target="iframeStatus">Team Total</a>
+    <a href="Aneeq Ajmal/dailyStatus.html" target="iframeStatus">Aneeq Ajmal</a>
+    <a href="Anna Szuster/dailyStatus.html" target="iframeStatus">Anna Szuster</a>
+    <a href="Beverly Parker/dailyStatus.html" target="iframeStatus">Beverly Parker</a>
+    <a href="Jenny Sanchez/dailyStatus.html" target="iframeStatus">Jenny Sanchez</a>
+    <a href="Jorna Begum/dailyStatus.html" target="iframeStatus">Jorna Begum</a>
+    <a href="Julie McGuiness/dailyStatus.html" target="iframeStatus">Julie McGuiness</a>
+    <a href="Laura Hewitt/dailyStatus.html" target="iframeStatus">Laura Hewitt</a>
+    <a href="Nikolas Galic/dailyStatus.html" target="iframeStatus">Nikolas Galic</a>
+    <a href="Paul Cook/dailyStatus.html" target="iframeStatus">Paul Cook</a>
+    <a href="Priyanka Kukkala/dailyStatus.html" target="iframeStatus">Priyanka Kukkala</a>
+    <a href="Rebecca Fisher/dailyStatus.html" target="iframeStatus">Rebecca Fisher</a>
+    <a href="Sahara Dennis/dailyStatus.html" target="iframeStatus">Sahara Dennis</a>
+    <a href="Sean Wider/dailyStatus.html" target="iframeStatus">Sean Wider</a>
+    <a href="Suna Hilal/dailyStatus.html" target="iframeStatus">Suna Hilal</a>
+  </div>
+</div>
+      <!-- IFRAME - STATUS METRICS -->
+      <div class="resp-container">
+        <div class="statsTable">
+          <iframe src="dailyStatus.html" name="iframeStatus" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen
+            onload="this.height=window.innerHeight+1500;this.width=window.innerWidth-200;"
+            title="IframeStatus">></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div id="Help" class="tabcontent">
+      <!-- IFRAME - GLOSSARY -->
+      <sop-table1></sop-table1>
+      <br>
+      <sop-table2></sop-table2>
+    </div>
+
+  </div>
+
+  <script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
+
+</body>
+
+</html>
