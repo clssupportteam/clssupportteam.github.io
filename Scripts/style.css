@@ -87,6 +87,7 @@ div.card:hover {
       position: fixed;
       top: 0;
       width: 100%;
+      padding: 20px 0 0 0;
     }
 
     .navbar button {
