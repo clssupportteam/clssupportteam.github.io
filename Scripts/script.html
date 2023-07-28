@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Consent - Objections</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+  <main>
+    <div class="navbar">
+      <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'script')">Outbound Script</button>
+        <button class="tablinks" onclick="openTab(event, 'callflow')">Call Flow</button>
+        <button class="tablinks" onclick="openTab(event, 'voicemail')">Voicemail Script</button>
+
+      </div>
+    </div>
+    <div class="spacer1"></div>
+    <div class="main">
+
+
+      <div id="script" class="tabcontent">
+        <h2>Outbound Call Script</h2>
+        <div class="card">
+          <p><b>Outbound</b> – Good morning/afternoon/evening, can I speak to <b>{client name}</b></p>
+          <p>My name is ……. and I’m calling from the <b>Co-op Funeralcare Support Team.</b></p>
+          <p>As you’re arranging a funeral with us <b>{for deceased name}</b> I want to let you know about some support
+            that is included as part of the funeral arrangement to help you deal with some practical matters. First, I’d
+            like to offer you my condolences.</p>
+          <p><b>Is now an ok time to speak?</b></p>
+        </div>
+        <br>
+        <div class="card">
+          <p style="color:red;"><b>I need to let you know calls are recorded for training and quality purposes.</b></p>
+        </div>
+        <br>
+        <div class="card">
+          <p>Co-op Funeralcare has lots of advice and support to help people going through bereavement. We have
+            information to access support groups and lots of useful articles that could be helpful, which I can send on
+            email.</p>
+          <p>There’s also support from <b>Co-op Legal Services</b>, there are two things they can help with. One is an
+            online service where you’re asked a few questions about <deceased name’s> circumstances that then produces a
+              checklist of all the legal things you might need to do. This is free to use, I can send this in the same
+              email. </p>
+          <p><b>Would you like me to do this?</b></p>
+          <hr>
+          <p><b>[ If Yes ]</b>- OK, can I confirm/take your email address please?</p>
+          <p><b>[ If No ]</b>- OK, problem</p>
+        </div>
+        <br>
+        <div class="card">
+          <p>The second thing Co-op Legal Services can help with is checking if you need <b>probate.</b>I can find this
+            out quickly with just a couple of questions if this that’s ok?</p>
+        </div>
+        <br>
+        <div class="card" style="background-color: orange;">
+          <h3>Probate explanation if needed for client</h3>
+          <hr class="dark">
+          <p><i>Probate, is the legal process of dealing with someone’s money, property, and possessions after they’ve
+              died.</i></p>
+        </div>
+        <br>
+        <div class="card">
+          <h3>Probate Need</h3>
+          <p>
+          <ol>
+            <li>Did {deceased name} own a property in their sole name?</li>
+            <li>Did {deceased name} have any bank or account with more than £30,000 just in their name? </li>
+          </ol>
+          </p>
+          <hr>
+          <p><b>[ If yes to either of above questions ]</b></p>
+          <p>Its likely you’ll need Probate. If you've not already instructed someone<b></b>I can ask a specialist from
+            Co-op Legal Services to call you.</p>
+        </div>
+        <br>
+        <div class="card">
+          <p><b>[ If Yes to the consultation ]</b></p>
+          <p>Ok, I just need to ask a couple more questions</p>
+          <hr>
+          <ol>
+            <li>
+              <b>Did {deceased name} leave a Will?</b>
+              <ul>
+                <li><b>[ If No ]</b> - apply intestacy rules to establish correct Personal Representative</li>
+              </ul>
+            </li>
+            <li>
+              <b>Are you the Executor named in the Will?</b>
+              <ul>
+                <li><b>[ If No ]</b> - OK, for the meeting to go ahead we will need to speak to the executor named in the
+                  will. I can provide you the email of support I mentioned earlier, and if you pass this on to the
+                  executor, they will be able to request a call back from CLS when it is convenient for them. [Refer to
+                  call close to end the call].</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+        <br>
+        <div class="card">
+          <h3>To make sure we help you speak to the right person, do know if the sole estate for your [Relation] could be over £750k?</h3>
+          <hr>
+          <p>
+            <ul>
+              <li><b>[ If client asks why you need this information ] </b>To ensure the Consultant can provide a bespoke Fixed Fee Quote that is accurate and in line with the complexities involved with High Value Estates</li>
+              <li><b>[ If Yes ] </b>meeting can only be booked with a consultant according to the high value estate booking exceptions list.</li>
+            </ul>
+          </p>
+        </div>
+        <br>
+        <div class="card">
+          <p>Thank you, I’ll check their diary and let you know about their availability. They’ll go through everything on the call with you, and at the end they will provide a no obligation fixed fee quote for Probate.</p>
+          <p><b>Would you prefer a video call or telephone call?</b></p>
+          <hr>
+          <p>You’ll get an email from Co-op Legal Services letting you know what you'll need for that video meeting / call. </p>
+          <p><b>Do you have pen and paper to hand for the details of the call?</b>&#10;&#13;[Give the Name of consultant, date and time of the call]</p>
+          <hr>
+          <p><b>CLS will also send you an email and text message prior to the meeting.</b></p>
+          <p>If you need to reschedule, you can call them and change the appointment on – <b style="color: red;">0330 041 7786</b></p>
+        </div>
+        <br>
+        <div class="card" style="background-color: orange; border: solid 2px red;">
+          <h3>ONLY IF CORONER</h3>
+          <p>I can see that the coroner is involved. I want to let you know that as part of the service you get by using Co-op Funeralcare to arrange the funeral, you can get a free consultation with a solicitor if you think you’ll need legal representation at the coroner’s court. If you need any help I can ask someone to call you to explain what they can do to help you.</p>
+          <p><b>Do you need help?</b></p>
+          <hr class="dark">
+          <p><b>Yes </b>- OK, I will make sure someone calls you <b>[ Follow the Proclaim referral process to Dan Comerford’s Team ]</b></p>
+          <p><b>No </b>- OK, No problem.</p>
+        </div>
+        <br>
+        <div class="card">
+          <h3>Thank you for your time and that telephone meeting has been arranged for you. </h3>
+          <hr>
+          <p><b>If No to Consultant call or If No probate Need - </b>OK, what I will do is email you a link which a lot of families have found useful. It is an online service that gives you a checklist of all the things you need to do when someone has died. The hub covers everything you might need to do. This email will come from Co-op Legal Services as it's their checklist. Could I take an email address to send it to?</p>
+          <p>Thank you for your time. Take care.</p>
+        </div>
+      </div>
+
+      <div id="callflow" class="tabcontent">
+        <h2>Outbound Call Flow</h2>
+        <div class="card">
+          <img src="https://clssupportteam.github.io//Scripts/ScriptFlowchartApril2023.png" alt="Call Flow Chart"
+            class="center">
+        </div>
+      </div>
+
+      <div id="voicemail" class="tabcontent">
+        <h2>Voicemail Script</h2>
+        <div class="card">
+          <p>Good <b>[Morning / Afternoon]</b>,</p>
+          <p>My name is ….. and I’m calling from the Co-op Funeralcare Support Team.</p>
+          <p><b>This call is nothing to worry about but is just to let you know that as part of the funeral arrangement,
+              you’re entitled to a free service to help you deal with lots of practical matters.</b></p>
+          <p>I’ll try calling again, but in the meantime if you’d like to call me back my number is <b>0330 041
+              7720</b>, Quoting ProClaim ref _________</p>
+          <br>
+          <br>
+          <p style="font-family: courier; color: gray;">* Voicemail Script: (To be left on Dialler Count 0, 3 and 5)</p>
+        </div>
+      </div>
+
+
+    </div>
+
+  </main>
+
+  <script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
+</body>
+
+
+
+</html>
