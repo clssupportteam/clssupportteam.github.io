@@ -135,6 +135,10 @@ li {
        /*cursor: pointer;*/
       }
 
+.card:nth-child(4n+0) {
+  background: white;
+  box-shadow: none;
+}
 
 .box {background-color: #ffffff;
        border-style: solid;
