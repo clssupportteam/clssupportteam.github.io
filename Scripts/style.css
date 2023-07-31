@@ -127,6 +127,7 @@ li {
 .card {background-color: whitesmoke;
        /*border-style: solid;*/
        border-width: 1px;
+       border-radius: 15px;
        padding-top: 20px;
        padding-right: 20px;
        padding-bottom: 20px;
@@ -172,7 +173,7 @@ div.card:hover {
 
     .main {
       padding: 0px 0 0 0;
-      margin-top: 30px;
+      margin-top: 55px;
       /*height: 1500px;*/
       /* Used in this example to enable scrolling */
     }
@@ -184,7 +185,7 @@ div.card:hover {
 
     }
 .spacer1 {
-  padding-top: 30px;
+  padding-top: 0px;
 }
 
 .tabcontent {
