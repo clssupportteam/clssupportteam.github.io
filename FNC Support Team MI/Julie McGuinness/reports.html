@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productivity Report</title>
+  <link href="../style.css" rel="stylesheet" type="text/css" />
+  <script defer src="../script.js"></script>
+</head>
+
+<body>
+
+  <div class="main">
+    <img id="banner" src="../img/coop.gif" alt="Funeralcare Logo" onload="openTab(event, 'Productivity')">
+    <h1>FNC&nbsp;Support&nbsp;Team -&nbsp;Productivity&nbsp;Metrics</h1>
+
+    <h2>Daily Performance</h2>
+
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'Productivity')">Productivity</button>
+      <button class="tablinks" onclick="openTab(event, 'Status')">Status</button>
+      <button class="tablinks" onclick="openTab(event, 'Help')">Help</button>
+    </div>
+
+    <div id="Productivity" class="tabcontent">
+      <h2>Daily Productivity Performance</h2>
+      <!-- IFRAME - PRODUCTIVITY METRICS -->
+      <div class="resp-container">
+        <div class="statsTable">
+          <iframe src="dailyProd.html" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen
+            onload="this.height=window.innerHeight+1500;this.width=window.innerWidth-200;"
+            title="Iframe Test">></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div id="Status" class="tabcontent">
+      <h2>Daily Status Metrics</h2>
+      <!-- IFRAME - STATUS METRICS -->
+      <div class="resp-container">
+        <div class="statsTable">
+          <iframe src="dailyStatus.html" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen
+            onload="this.height=window.innerHeight+1500;this.width=window.innerWidth-200;"
+            title="Iframe Test">></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div id="Help" class="tabcontent">
+      <!-- IFRAME - GLOSSARY -->
+      <sop-table1></sop-table1>
+      <br>
+      <sop-table2></sop-table2>
+    </div>
+
+  </div>
+
+  <script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
+
+</body>
+
+</html>

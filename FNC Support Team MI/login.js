@@ -52,8 +52,8 @@ function Getstats() {
     else if (userName == 'PaulCook' && PIN == '1404') {
       location = ("Paul Cook/reports.html");
     }
-    else if (userName == 'JulieMcGuiness' && PIN == '4510') {
-      location = ("Julie McGuiness/reports.html");
+    else if (userName == 'JulieMcGuinness' && PIN == '4510') {
+      location = ("Julie McGuinness/reports.html");
     }
     else if (userName == 'SupportTeam' && PIN == '0000') {
       location = ("reports.html");
