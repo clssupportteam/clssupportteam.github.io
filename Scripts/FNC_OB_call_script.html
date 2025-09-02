@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>
+   Call Scripts
+  </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+  </script>
+
+
+<script>
+function myFunction() {
+  window.open("https://clssupportteam.github.io//Scripts/obj2.html", "_blank", "width=1000,height=500,left=100,top=100");
+}
+</script>
+
+
+
+  <style>
+   .custom-grey {
+  		color: #3c3c3c !important;
+	}
+
+	.nav-pills .nav-link {
+  		color: #3c3c3c !important;
+  		background-color: transparent !important;
+	}
+
+	.nav-pills .nav-link.active {
+  		color: white !important;
+  		background-color: #b4b4b4 !important;
+	}
+
+	.card {
+		border-radius:15px;
+		margin: 0 0 25px 0;
+	}
+
+	.grey {
+		background-color: #f0f0f0 !important;
+	}
+
+	.lightBlue {
+		background-color: #f0f0ff !important;
+		margin: 0 50px 25px 50px !important;
+		border: solid 2px grey;
+	}
+
+	.lgrey{
+		background-color: #f9f9f9 !important;
+	}
+
+	.nav-link {
+		border: 1px solid #dee2e6 !important;
+	}
+	
+	.blue {
+		color:dodgerblue !important;
+	}
+
+
+	button {
+		border: 1px solid #aaaaaa !important;
+		border-radius: 5px;
+	}
+
+	a {
+		color: black;
+	}
+
+  </style>
+
+
+
+
+ </head>
+ <body>
+  <div class="container-fluid">
+   <div class="row">
+
+
+
+    <!-- Sidebar -->
+
+    <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse position-sticky" id="navbar-example3" style="top: 1rem; height: 100vh; overflow-y: auto;">
+     <nav aria-orientation="vertical" class="nav flex-column nav-pills" id="toc" role="tablist">
+      <a class="nav-link custom-grey" href="#intro">
+       Introduction
+      </a>
+      <a class="nav-link custom-grey" href="#cls">
+       Co-op Legal Services
+      </a>
+      <a class="nav-link custom-grey" href="#probateNeed">
+       Probate Need?
+      </a>
+      <a class="nav-link custom-grey" href="#book-meeting">
+       Booking the Meeting
+      </a>
+      <a class="nav-link custom-grey" href="#highValue">
+       £750,000 Question
+      </a>
+      <a class="nav-link custom-grey" href="#liveTransfer">
+       Live Transfer
+      </a>
+      <a class="nav-link custom-grey" href="#video">
+       Video Meeting
+      </a>
+      <a class="nav-link custom-grey" href="#phone">
+       Phone Meeting
+      </a>
+      <a class="nav-link custom-grey" href="#confirmation">
+       Confirmation
+      </a>
+      <a class="nav-link custom-grey" href="#voicemail" onclick="document.getElementById('voicemail').style.display= 'block'">
+       Voicemail Script
+      </a>
+      <a class="nav-link custom-grey" href="" onclick="myFunction()">
+       Objections
+      </a>
+     </nav>
+    </nav>
+
+
+
+    <!-- Main content -->
+    <div class="col-md-9 ms-sm-auto col-lg-10 px-md-4" data-bs-offset="0" data-bs-spy="scroll" data-bs-target="#navbar-example3" tabindex="0">
+
+
+<!-- Outbound -->
+     <div class="card lgrey" id="intro">
+      <div class="card-body">
+       <h3>
+         Co-op Funeralcare Support Team - Outbound Call Script
+       </h3>
+       <p class="text-secondary">
+        <b>
+         ** Note - If the client enquires about the funeral, please direct the client back to branch to make contact following your call **
+        </b>
+       </p>
+
+<!-- Introduction -->
+       <div class="card grey">
+        <div class="card-body blue">
+       <h4 style="color:black;">
+        1 - Introduction
+       </h4>
+          <p>"Good morning/afternoon/evening, can I speak to <b>{client name}</b>"</p>
+          <p>"My name is ……. and I’m calling from the <b>Co-op Funeralcare Support Team."</b></p>
+          <p>"As you’re arranging a funeral with us <b>{for deceased name}</b> I want to let you know about some support that is included as part of the funeral arrangement to help you deal with some practical matters.</p><p> First, I’d like to offer you my condolences."</p>
+
+          <p><b>"Is now an ok time to speak?"</b><br>
+	     <span class="text-body">
+	        <input type="radio" id="yesspeakrad" name="speakRad" value="YESSPEAKRAD">
+	        <label for="yesspeakrad">Yes</label>
+
+	        <input type="radio" id="nospeakrad" name="speakRad" value="NOSPEAKRAD">
+	        <label for="nospeakrad">No</label>
+	     </span>
+	  </p>
+	  <hr>
+         <ul class="text-body">
+          <li>
+           <b>[ If Yes ]</b>- <a href="#cls">Go to 2 - CLS Support</a>
+          </li>
+          <li>
+           <b>[ If No ]</b>- <span class="blue">"OK, thats fine, I can understand you are busy. When is a good time to call back?"</span> <br>Arrange date and time then set callback <b>[ Close Call ]</b>
+          </li>
+         </ul>
+        </div>
+       </div>
+<!-- /Introduction -->
+
+	<p class="text-danger" id="cls"style="margin-left: 15px;font-size: 18px;"><b>"I need to let you know calls are recorded for training and quality purposes."</b></p>
+
+
+
+<!-- CLS -->
+     <div class="card grey" >
+      <div class="card-body">
+       <h4>
+        2 - Co-op Legal Services
+       </h4>
+       <p class="text-primary">
+        "The support comes from Co-op Legal Services, there are two things they can help with."
+       </p>
+
+
+<!-- Thing 1 -->
+       <div class="card lgrey">
+        <div class="card-body">
+         <p class="blue">
+          1) "One is an online service where you’re asked a few questions about circumstances that then produces a checklist of all the legal things you might need to do. This is free to use, I can send this in the same email."<b><br><br>"Would you like me to do this?"</b><br>
+	     <span class="text-body">
+	        <input type="radio" id="yesonlinerad" name="onlineRad" value="YESONLINERAD">
+	        <label for="yesonlinerad">Yes</label>
+
+	        <input type="radio" id="noonlinerad" name="onlineRad" value="NOONLINERAD">
+	        <label for="noonlinerad">No</label>
+	     </span>
+         </p>
+	 <hr>
+         <ul>
+          <li>
+           <b>[ If Yes ]</b>- <span class="blue">"OK, can I confirm/take your email address please?"</span> - Send hub link - <a href="#probateCheck">Go to 2.2 - Probate check</a>
+
+          </li>
+          <li>
+           <b>[ If No ]</b>- <span class="blue">"OK, thank you."</span> <a href="#probateCheck">Go to 2.2 - Probate check</a>
+          </li>
+         </ul>
+        </div>
+       </div>
+<!-- /Thing 1 -->
+
+
+<!-- Thing 2 -->
+<div id="probateCheck">
+<div class="card lgrey">
+        <div class="card-body">
+         <p class="text-primary">
+          2) "The second thing Co-op Legal Services can help with is checking if you need probate."</p>
+	<p class="text-primary">"I can find this out quickly with just a couple of questions, if this that’s ok?"<br>
+	     <span class="text-body">
+	        <input type="radio" id="yescheckrad" name="checkRad" value="YESCHECKRAD">
+	        <label for="yeschechrad">Yes</label>
+
+	        <input type="radio" id="nocheckrad" name="checkRad" value="NOCHECKRAD">
+	        <label for="nocheckrad">No</label>
+	     </span>
+         </p>
+	 <hr>
+         <ul>
+          <li>
+           <b>[ If Yes ]</b>- <span class="text-primary">"Okay, thank you"</span> - <a href="#probateNeed">Go to 2.2 - Probate check</a>
+
+          </li>
+          <li>
+           <b>[ If No ]</b>- <span class="text-primary">"Okay, no problem."</span> <a href="#noProbate">Go to 5 - Close Call</a>
+          </li>
+         </ul>
+        </div>
+       </div>
+     </div>
+<!-- /Thing 2 -->
+
+
+      </div>
+     </div>
+<!-- /CLS -->
+
+<!-- ProbateExplanation -->
+<div class="card lightBlue">
+        <div class="card-body">
+ 	<h5>Probate explanation if needed for client</h5>
+          <hr class="dark">
+          <p><i>Probate, is the legal process of dealing with someone’s money, property, and possessions after they’ve
+              died.</i></p>
+        </div>
+       </div>
+<!-- /ProbateExplanation -->
+
+<!-- ProbateNeed -->
+     <div id="probateNeed">
+
+
+
+<!-- ProbateNeedQuestions -->
+
+      <div class="card grey">
+       <div class="card-body">
+        <h4>
+         3 - Probate Need Questions
+        </h4>
+
+<!-- ProbateCheck -->
+        <div class="card lgrey">
+         <div class="card-body">
+          <h5>
+           3.1 - Determine if Probate is required?
+          </h5>
+	  <h6 class="customLink">[Select any that apply]</h6>
+ 	  <p>
+
+
+          <ol class="text-primary">
+
+            <li>"Did <b>{deceased name}</b> own a property in their sole name?"</li>
+
+	        <input type="radio" id="yesproprad" name="propRad" value="YESPROPRAD">
+	        <label for="yesproprad">Yes</label>
+
+	        <input type="radio" id="noproprad" name="propRad" value="NOPROPRAD">
+	        <label for="noproprad">No</label>
+
+
+            <li>"Did <b>{deceased name}</b> have any bank or account with more than £30,000 just in their name?"</li>
+
+	        <input type="radio" id="yesbankrad" name="bankRad" value="YESBANKRAD">
+	        <label for="yesbankrad">Yes</label>
+
+	        <input type="radio" id="nobankrad" name="bankRad" value="NOBANKRAD">
+	        <label for="nobankrad">No</label>
+          </ol>
+
+
+
+          </p>
+          <hr>
+	  <ul>
+	    <li><b>[ If Yes to any of the above questions? ]</b> - The estate likely needs probate - <a href="#yesProbate">Go to 3.2 - Probate Needed</a>
+	    <li><b>[ If No to 'All' of the above questions? ]</b> - Probate not needed - <a href="#noProbate">Go to 5 - Close Call</a>
+	  </ul>
+         </div>
+        </div>
+<!-- /ProbateCheck -->
+
+
+
+<div id="yesProbate" style="display:block;">
+
+        <div class="card lgrey">
+         <div class="card-body">
+
+	<h5>3.2 - Probate Needed</h5>
+          <h6 class="customLink">
+           [ If yes to either of the probate questions ]
+          </h6>
+          <p class="text-primary"  id="yesProbate">
+           "Its likely you’ll need Probate. If you've not already instructed someone, <b>I can ask a specialist from Co-op Legal Services to call you?"</b>
+          </p>
+
+	        <input type="radio" id="yesbookrad" name="bookRad" value="YESBOOKRAD">
+	        <label for="yesbookrad">Yes</label>
+
+	        <input type="radio" id="nobookrad" name="bookRad" value="NOBOOKRAD">
+	        <label for="nobookrad">No</label>
+
+	  <hr>
+	  <ul>
+	    <li><b>[ If Yes ]</b> - Client agrees to consultation - <a href="#yesConsultant">Go to 3.3 - Meeting</a>
+	    <li><b>[ If No ]</b> - Client declines a consultation - <a href="#noProbate">Go to 5 - Close Call</a>
+	  </ul>
+
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+	  <div style="padding-left:15px;">
+	  <button id="show" onclick="
+	  document.getElementById('obj').style.display= 'block';
+	  document.getElementById('hide').style.display= 'block';
+	  document.getElementById('show').style.display= 'none';">
+		Show Objections
+	  </button>
+
+	  <button id="hide" style="display:none;" onclick="
+	  document.getElementById('obj').style.display= 'none';
+	  document.getElementById('show').style.display= 'block';
+	  document.getElementById('hide').style.display= 'none	';">
+		Hide Objections
+	  </button>
+	  <br>
+	  <div id="obj" style="display:none;">
+	    <ol>
+	      <li>Not the Executor
+	      <li>Plans to DIY
+	      <li>Solicitor Holds the Will
+	      <li>Own Solicitor
+	      <li>Simple Estate
+	      <li>Not Ready
+	      <li>There's a Will, so no Probate Needed?
+	      <li>Has LPA
+	      <li>Nervous About Phone
+	      <li>Friend/Family Helping
+	    </ol>
+	  </div>
+	  </div>
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+
+         </div>
+        </div>
+
+
+<div id="yesConsultant" style="display:block;">
+        <div id="book-meeting" class="card lgrey">
+         <div class="card-body">
+	  <h5>3.3 - Meeting</h5>
+          <h6 class="customLink">[ If Yes to the consultation ]</h6>
+          <p class="text-primary">"OK, I just need to ask a couple more questions"</p>
+
+          <hr>
+
+
+
+<form>
+          <ul>
+            <li>
+                <b class="text-primary">"Did {deceased name} leave a Will?" - </b><br>
+	        <input type="radio" id="yeswillrad" name="willRad" value="YESWILLRAD">
+	        <label for="yeswillrad">Yes</label>
+
+	        <input type="radio" id="nowillrad" name="willRad" value="NOWILLRAD">
+	        <label for="nowillrad">No</label>
+	    </li>
+
+	    <br>
+            <ul>
+                <li id="yesWill" style="display:block;"><b>[ If Yes ]</b> - <span class="text-primary">"Are you the Executor named in the Will?"<br>
+	          <input type="radio" id="yesexecrad" name="execRad" value="YESEXECRAD">
+	          <label for="yesWill">Yes</label>
+	          <input type="radio" id="noexecrad" name="execRad" value="NOEXECRAD">
+	          <label for="noWill">No</label>
+		</li>
+		<br>
+		<ul>
+		  <li id="yesPR" style="display:block;">
+		    <b>[ If Yes ]</b>: You are speaking with the correct PR - <span class="text-primary">"Okay, just a few more questions..."</span> - <a href="#highValue">Go to 3.4 - £750k question</a>
+		  </li><br>
+		  <li id="noPR" style="display:block;">
+		    <b>[ If No ]</b> - <span class="text-primary">"OK, for the meeting to go ahead we will need to speak to the executor named in the will. I can provide you the email of support I mentioned earlier, and if you pass this on to the executor, they will be able to request a call back from CLS when it is convenient for them."</span> - 			    <a href="#noProbate">Go to 5 - Close Call</a>
+		  </li>
+		</ul>
+		<br><br>
+
+                <li id="noWill" style="display:block;"><b>[ If No ]</b> - <span class="text-primary">"Are you the [deceased name] next of kin?" </span>Apply intestacy rules to establish correct Personal Representative.<br>
+	          <input type="radio" id="yesnokrad" name="NOKRad" value="YESNOKRAD">
+	          <label for="yesWill">Yes</label>
+	          <input type="radio" id="nonokrad" name="NOKRad" value="NONOKRAD">
+	          <label for="noWill">No</label>
+	        </li>
+		<br>
+		<ul>
+		  <li id="yesNOK" style="display:block;">
+		    <b>[ If Yes ]</b>: You are speaking with the correct PR - <span class="text-primary">"Okay, just a few more questions..."</span> - <a href="#highValue">Go to 3.4 - £750k question</a>
+		  </li><br>
+		  <li id="noNOK" style="display:block;">
+		    <b>[ If No ]</b> - <span class="blue">"OK, for the meeting to go ahead we will need to speak to the executor named in the will. I can provide you the email of support I mentioned earlier, and if you pass this on to
+		    the executor, they will be able to request a call back from CLS when it is convenient for them" - </span> 			    <a href="#noProbate">Go to 5 - Close Call</a>
+
+		  </li> 
+	        </ul>
+ 
+             </ul>
+
+          </ul>
+
+</form>
+
+
+
+
+</div title="yesConsultant">
+
+
+         </div>
+        </div>
+
+
+	<div class="card lgrey" id="highValue">
+	  <div class="card-body">
+	    <h5>3.4 - £750,000 Question</h5>
+	    <p class="text-primary">
+"To make sure we help you speak to the right person, do know if the sole estate for your [Relation] could be over £750k?"
+         </p>
+	 <ul>
+	   <li><b>[ If client asks why you need this information]</b> - <span class="blue">"To ensure the Consultant can provide a bespoke Fixed Fee Quote that is accurate and in line with the complexities involved with High Value Estates"</span>
+	   <li><b>[If Yes]</b> - The meeting can only be booked with a consultant according to the high value estate booking exceptions list.
+	 </ul>
+	 <p class="text-primary">"Thank you, I’ll check their diary and let you know about their availability. They’ll go through everything on the call with you, and at the end they will provide a no obligation fixed fee quote for Probate."</p>
+
+
+	  </div>
+	  </div>
+
+	<div class="card lgrey" id="liveTransfer">
+	  <div class="card-body">
+	    <h5>3.5 - Live Transfer</h5>
+	    <h6 style="color: gray;">Offer a Live Transfer first (if appropriate)</h6>
+	    <p class="blue">
+"I can try to transfer you to one of our consultants now if that's convenient?"
+         </p>
+	 
+
+	 <p><b>[ If Yes to transfer ]</b> - <span class="text-primary">"I'll check if we have a consultant available now."</span> (Click the IQ button and transfer client)</p>
+	 <p><b>[ If No to transfer ]</b> - <a href="#video">Go to 3.6 - Video Meeting</a></p>
+
+
+	  </div>
+	  </div>
+
+
+	<div class="card lgrey" id="video">
+	  <div class="card-body">
+	    <h5>3.6 - Video Meeting</h5>
+	    <h6 style="color: gray;">Offer a video meeting</h6>
+	 <p class="text-primary">"If its not convenient to transfer right now I can book you a video meeting?"</p>
+	    <p class="btext-primary">
+"With a video meeting the consultant will send you link and you just need to click onto the link to join the meeting?"
+         </p>
+	 <p><b>[ If Yes to video meeting ]</b> - <span class="text-primary">"Okay, let me check the diary"</span> - <a href="#confirmation">Go to 3.8 - Meeting Confirmation</a></p>
+	 <p><b>[ If No to video meeting ]</b> - <a href="#phone">Go to 3.7 - Telephone Meeting</a></p>
+
+
+	  </div>
+	  </div>
+
+
+	<div class="card lgrey" id="phone">
+	  <div class="card-body">
+	    <h5>3.7 - Telephone Meeting</h5>
+	    <h6 style="color: gray;">Offer a TQ</h6>
+	    <p class="text-primary">"Okay, we could do it via a telephone call if thats better for you?"</p>
+	    <p><span class="text-primary">
+"The consultant will go through everything on the call, and at the end they will provide a no obligation fixed fee quote for Probate." - </span><a href="#confirmation">Go to 3.8 - Meeting Confirmation</a>
+         </p>
+	 
+
+	  </div>
+	  </div>
+
+
+	<div class="card lgrey" id="confirmation">
+	  <div class="card-body">
+	    <h5>3.8 - Meeting Confirmation</h5>
+	    <h6 style="color: gray;">Check diary and agree date and time</h6>
+	    <p class="text-primary">
+"You’ll get an email from Co-op Legal Services letting you know what you'll need for that video meeting / call. Do you have pen and paper to hand for the details of the call?"</p>
+         </p>
+<h6 style="color: gray;">[ Give the Name of consultant, and confirm the date and time of call / video meeting ]</h6>
+	<p class="text-danger"><b>** The Consultant may be subject to change **</b></p>
+	<p class="text-primary"><b>CLS will also send you an email and text message prior to the meeting.</b> If you need to reschedule, you can call them and change the appointment on – 0330 041 7786.
+
+
+<!-- Coroner -->
+	<div id="coroner" style="display:block;">
+	  <div class="card grey">
+            <div class="card-body">
+
+	<h5 class="text-danger">[ Only if Coroner box ticked on Proclaim ]</h5>
+	<p class="text-primary"><b>"I can see that the coroner is involved.</b> Has their work been concluded or do you need support?"</p>
+        <p><b>[ If Yes ]</b> - <span class="text-primary">"I want to let you know that as part of the service you get by using Co-op Funeralcare to arrange the funeral, you can get a free consultation with a solicitor if you think you’ll need legal representation at the coroner’s court. If you need any help I can ask someone to call you to explain what they can do to help you."</span></p>
+	<hr>
+	<p class="text-primary">"Do you need help?"</p>
+        <p><b>[ If Yes ]</b> - <span class="text-primary">"Okay I will make sure a representative from Co-op Legal Services calls you back within the next 24 hours, is this time frame suitable to for you?"</span></p>
+	<p style="color: gray;">[Confirm with client then follow the Proclaim referral process to the Coroner Team]</p><br>
+        <p><b>[ If No ]</b> - <span class="text-primary">"Okay, thank you for letting me know. "</span></p>
+            </div>
+          </div>
+	</div>
+<!-- /coroner -->
+
+
+<p><a href="#noProbate">Go to 5 - Close Call</a></p>
+
+
+
+
+
+	  </div>
+	  </div>
+
+
+</div title="yesProbate">
+
+
+         </div>
+        </div>
+<!-- /ProbateNeedQuestions -->
+
+	</div>
+<!-- /ProbateNeed -->
+
+
+
+
+
+
+<!-- NoProbate -->
+	<div id="noProbate" style="display:block;">
+	  <div class="card grey">
+            <div class="card-body">
+
+	<h5>5 - Close Call</h5>
+	<p><b>[ If Yes to Consultant call ] - </b><span class="text-primary">"Thank you for your time, that telephone meeting has been arranged for you. If you need to reach out to us in the mean time please call us on the number provided. Take care, and thanks again for using Co-op Funeralcare. Good bye"</p>
+
+	<p><b>[ If No to Consultant call or If No probate Need ] - </b><span class="text-primary">"OK, what I will do is email you a link which a lot of families have found useful. It is an online service that gives you a checklist of all the things you need to do when someone has died.</p><p class="text-primary">"The hub covers everything you might need to do. This email will come from Co-op Legal Services as it's their checklist. Could I take an email address to send it to?"</span></p>
+          <p class="text-primary">"Thank you for your time. Take care."</p>
+
+            </div>
+          </div>
+	</div>
+<!-- /NoProbate -->
+
+
+      </div>
+     </div>
+<!-- /Outbound -->
+
+
+     <div id="voicemail" style="display:none;">
+
+      <div class="card grey">
+       <div class="card-body">
+        <h5>
+         6 - Voicemail Script
+        </h5>
+        <p style="font-family: courier; color: gray;">
+         * Voicemail Script: (To be left on 1st call, on 2nd call no voicemail to be left)
+        </p>
+        <p class="text-primary">
+         "Good Morning / Afternoon,"
+        </p>
+
+        <p class="text-primary">
+         "My name is ….. and I’m calling from the Co-op Funeralcare Support Team."
+        </p>
+        <p class="text-primary">
+          "This call is nothing to worry about but is just to let you know that as part of the funeral arrangement, you’re entitled to a free service to help you deal with lots of practical matters."
+        </p>
+	<p class="text-primary">
+	  "I’ll try calling again, but in the meantime if you’d like to call me back my number is <b>0330 041 7720</b>, your reference is … <b>[Quote the Proclaim Ref]</b>"
+	</p>
+        <p class="text-primary">
+         Thank you, goodbye
+        </p>
+
+       </div>
+      </div>
+     </div>
+
+
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
